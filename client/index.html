@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon - Search Product</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <main>
+        <!-- Search bar and Welcome Message -->
+        <div id="top-bar">
+            <div id="logo">
+                <img src="./assets/images/amazon-logo.png" alt="amazon-logo" width="200">
+            </div>
+            <form id="searchForm">
+                <input type="text" name="keyword" id="searchInput" placeholder="Search products ...">
+                <button type="submit" value="Search" id="searchButton">
+                    <img src="./assets/images/search.png" alt="search">
+                </button>
+            </form>
+            <p id="description">Find the best deals on Amazon effortlessly. Simply enter your desired product, and we'll fetch the latest and greatest for you. Discover convenience in every search</p>
+        </div>
+
+        <!-- Container to store the search result products -->
+        <div id="product-container">
+        </div>
+
+        <!-- Container to display error -->
+        <div id="error-container">
+            <h2 id="error-message">Oops! Something went wrong</h2>
+            <p id="error-description"></p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>©2024. PBL Project</p>
+    </footer>
+
+    <script src="components/productCard.js"></script>
+    <script src="components/productCardSkeleton.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
